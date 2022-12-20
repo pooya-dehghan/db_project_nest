@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  dev-db :configs:
+    image : regp.scratnet.com/docker.io/library/postgres:latest
+    ports : 
+    - 5555:5555
+    environment:
+      POSTGRES_USER : postgres
+      POSTGRES_PASSWORD : kashmar552
+      POSTGRES_DB: nest
+    networks :
+      - pooyanet
+networks:
+  pooyanet :
